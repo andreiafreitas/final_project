@@ -1,6 +1,6 @@
 /*
 Project Name: Portuguese Food 
-Final project
+Final Project
 Author: Andreia Freitas
 Developer @GA in London
 */
@@ -30,16 +30,11 @@ Developer @GA in London
 	clear: both;
 }
 
-img{ 
-max-width: 100%;
- }
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
-	color: #000;
 	font-size: 12px;
 	line-height: 1.4;
 	font-family: 'Open Sans', sans-serif;
@@ -47,37 +42,45 @@ body {
 
 .page-header h1{
 	text-transform: uppercase;
-	font-size: 2em;
+	font-size: 1.5rem;
 }
+
 .page-header a{
 	text-decoration: none;
 	color: white;
 }
 
-header {
-	background: black;
-	padding: 3%;
+header{
+	background-color: rgb(26, 26, 26);
+	padding: 3% 3% ;
 }
 
 .page-header{
 	float: left;
 }
-nav a{
-	text-decoration: none;
-	color: white;
+
+nav{
 	float: right;
 }
+
+nav a{
+	text-decoration: none;
+	font-size: 1rem;
+	color: white;
+	padding: 0 10px;
+}
+
 .banner {
-	background: url(../images/wine.png) center no-repeat;
+	background: url(../images/azulejos.jpg) center no-repeat;
 	background-size: cover;
-	padding: 15%;
+	padding: 12%;
 }
 
 .intro-content{
 	width: 900px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 3% 0 0 0;
+	padding: 5% 0 0 0;
 }
 
 .intro-content a{
@@ -92,7 +95,8 @@ nav a{
 
 .card {
 	float: left;
-	width: 25%;
+	width: 33.33333%;
+	padding-top: 20px;
 }
 
 .card img {
@@ -107,67 +111,101 @@ nav a{
 }
 
 .card .button {
-	font-size: .75em;
+	font-size: .75rem;
 }
 
-.card p, .card .button{
+.card p, .card h3, .card .button {
 	position: relative;
-	bottom: 80px;
+	bottom: 150px;
 }
 
-.recipe:hover img{
-	opacity: .8;
-	color: rgb(26 26 26);
+.recipe h3{
+	font-size: 0.9rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	opacity: 0;
 }
 
 .recipe p{
-	font-size: 16px;
-	font-weight: bold;
-	color: white;
-    text-transform: uppercase;
-    opacity:0;
+	font-size: 0.8rem;
+	opacity: 0;
+	text-align: justify;  
+	padding: 20px 30px;  
 }
 
 .recipe .button{
+	font-size: 0.8rem;
 	text-decoration: none;
-    text-transform: uppercase;
-    opacity:0;
-    letter-spacing: 1px;
+	opacity: 0;
 	font-weight: bold;
-	background: rgb(95, 2, 31);
-	color: white;
-	display: block;
-	text-align: center;
-	padding: 6px;
-    box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
-	border-radius: 5px;
+	color: darkred;
 }
 
-.recipe:hover p, .recipe:hover .button{
+.recipe:hover img{
+	opacity: 0.1;
+}
+
+.recipe:hover h3, .recipe:hover p, .recipe:hover .button{
 	opacity:1;
 }
 
-.container{
-	max-width: 100%;
+.videos{
+	background-color: rgb(26, 26, 26);
+	margin: 0 auto;
+	text-align: center;
+	padding: 3% 0 6% 0;
 }
 
-.restaurants {
+.videos h2{
+	font-size: 1.2rem;
+	color: white;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+}
 
-	background-color: rgb(26, 26, 26);
-	
+.container-restaurants{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.container-restaurants img{
+	display: block;
 }
 
 .restaurant{
+	position: relative;
 	float: left;
+	width: 50%;
+}
+
+.maps {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.maps iframe{
+	width: 100%;
+	height: 100%;
+}
+
+.restaurant:hover img{
+	opacity: 0.1;
+}
+
+.restaurant:hover .maps, .restaurant:hover p{
+	opacity:1;
 }
 
 footer{
-	float: left;
 	background-color: rgb(26, 26, 26);
-	padding: 30px;
 	font-weight: 700;
 	color: white;
+	margin: 0 auto;
+	text-align: center;
+	width:100%;
+	height:10%;
+	bottom:0;
+	padding: 25px 90px;
 }
-
-
-

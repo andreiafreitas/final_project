@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>Portuguese Food</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900" rel="stylesheet"> type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900" rel="stylesheet"> <type='text/css'></type='text>
 	
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -17,125 +17,107 @@
 			
 		</div>
 		<nav>
-			<a href="recipes.html">RECIPES</a>
+			<a href="#">About</a>
+			<a href="recipes.html">Recipes</a>
+			<a href="restaurants.html">Restaurants</a>
+			<a href="#">Contacts</a>
 		</nav>
 	</header>
-	<section class="banner">
-	<h2></h2>
+
+	<div class="banner"></div>
+
+	<section class="intro-content">
+		<a href="recipes.html">Recipes</a>
+		<ul class="cards">
+			<li class="card">
+				<article class="recipe">
+					<figure>
+						<img src="./images/polvo-a-lagareiro.jpg">
+						<h3>Polvo à Lagareiro</h3>
+						<p>A whole octopus is first boiled and then roasted in the oven with plenty of garlic and olive oil</p>
+						<a class="button" href="#">more</a>
+					</figure>
+				</article>
+			</li>
+			<li class="card">
+				<article class="recipe">
+					<figure>
+						<img src="./images/bacalhau-bras.jpg">
+						<h3>Bacalhau à Brás</h3>
+						<p>The one of the best; a combination of onions, chips, olives, parsley, egg and, of course, cod.</p>
+						<a class="button" href="#">more</a>
+					</figure>
+				</article>
+			</li>
+			<li class="card">
+				<article class="recipe">
+					<figure>
+						<img src="./images/francesinha.jpg">
+						<h3>Francesinha</h3>
+						<p> </p>
+						<a class="button" href="#">more</a>
+					</figure>
+				</article>
+			</li>
+		</ul>
 	</section>
 
-	<section class="intro">
-		<div class="container">
-			<div class="intro-content">
-				<a href="recipes.html">Recipes</a>
-				<section class="profiles">
-					<div class="wrapper">
-						<ul class="cards">
-							<li class="card">
-								<article class="recipe">
-									<figure>
-										<img src="./images/alheira.jpg" alt="alheira-de-mirandela">
-										<p>Alheira de Mirandela</p>
-										<a class="button" href="#">more</a>
-									</figure>
-								</article>
-							</li>
-							<li class="card">
-								<article class="recipe">
-									<figure>
-										<img src="./images/polvo-a-lagareiro.jpg">
-										<p>Polvo à Lagareiro</p>
-										<a class="button" href="#">more</a>
-									</figure>
+	<section class="videos">
+		<h2>Look to this videos about portuguese food</h2>
+		<iframe width="853" height="480" src="https://www.youtube.com/embed/JYg-VMkxWGY" frameborder="0" allowfullscreen></iframe>
+	</section>
 
-									
-								</article>
-							</li>
-							<li class="card">
-								<article class="recipe">
-									<figure>
-										<img src="./images/bacalhau-com-natas.jpg">
-										<p>Bacalhau com Natas</p>
-										<a class="button" href="#">more</a>
-									</figure>
-								</article>
-							</li>
-							<li class="card">
-								<article class="recipe">
-									<figure>
-										<img src="./images/caldo-verde.jpg">
-										<p>Caldo Verde</p>
-										<a class="button" href="#">more</a>
-									</figure>
-
-									
-								</article>
-							</li>
-						</ul>
+	<section class="container-restaurants clearfix">
+		<ul>
+			<li>
+				<article class="restaurant">
+					<figure>
+						<img src="./images/a-toca.jpg">
+					</figure>
+					<div class="maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4970.1237026306035!2d-0.13572036696963544!3d51.475378979629895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604f84d875ac5%3A0x279d41c99b59870f!2sA+Toca+Restaurant!5e0!3m2!1spt-PT!2suk!4v1489260267052" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
-				</section>
-
-				<section class="restaurants clearfix">
-					<div class="container">
-						<ul>
-							<li>
-								<article class="restaurant">
-									<figure>
-										<img src="./images/a-toca.jpg">
-										<p>A Toca</p>
-									</figure>
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4970.1237026306035!2d-0.13572036696963544!3d51.475378979629895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604f84d875ac5%3A0x279d41c99b59870f!2sA+Toca+Restaurant!5e0!3m2!1spt-PT!2suk!4v1489260267052" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</article>
-							</li>
-							<li>
-								<article class="restaurant">
-									<figure>
-										<img src="./images/o-tino.jpg">
-										<p>O Tino</p>
-									</figure>
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.7546392189956!2d-0.14157388451413472!3d51.53605997963983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b1f8a5b1f83%3A0xee216a39992b9526!2sO+Tino!5e0!3m2!1spt-PT!2suk!4v1489260638180" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</article>
-							</li>
-							<li>
-								<article class="restaurant">
-									<figure>
-										<img src="./images/portugal.jpg">
-										<p>Restaurante Portugal</p>
-									</figure>
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.800208864593!2d-0.12631538451654142!3d51.480181479630744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ee706bcfc1%3A0xcbe8fb227a81ed9f!2sRestaurante+Portugal!5e0!3m2!1spt-PT!2suk!4v1489260881052" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</article>
-							</li>
-							<li>
-								<article class="restaurant">
-									<figure>
-										<img src="./images/the-village.jpg">
-										<p>The Village Restaurante</p>
-									</figure>
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.9180795194293!2d-0.11889568451663746!3d51.47801797963028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876048b57a93bab%3A0x5e1a56de561443ba!2sThe+Village+Restaurante!5e0!3m2!1spt-PT!2suk!4v1489261242449" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</article>
-							</li>
-							<li>
-								<article class="restaurant">
-									<figure>
-										<img src="./images/grelha.jpg">
-										<p>Grelha D'Ouro</p>
-									</figure>
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.913448661563!2d-0.12544068451658852!3d51.47810297963026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604f6aac39289%3A0x4d5b85d2bab8c91d!2sGrelha+D&#39;Ouro!5e0!3m2!1spt-PT!2suk!4v1489261765185" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</article>
-							</li>
-						</ul>
-
-
-
+				</article>
+			</li>
+			<li>
+				<article class="restaurant">
+					<figure>
+						<img src="./images/portugal.jpg">
+					</figure>
+					<div class="maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.800208864593!2d-0.12631538451654142!3d51.480181479630744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ee706bcfc1%3A0xcbe8fb227a81ed9f!2sRestaurante+Portugal!5e0!3m2!1spt-PT!2suk!4v1489260881052" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
-				</section>
+				</article>
+			</li>
+			<li>
+				<article class="restaurant">
+					<figure>
+						<img src="./images/the-village.jpg">
+					</figure>
+					<div class="maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.9180795194293!2d-0.11889568451663746!3d51.47801797963028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876048b57a93bab%3A0x5e1a56de561443ba!2sThe+Village+Restaurante!5e0!3m2!1spt-PT!2suk!4v1489261242449"  frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</article>
+			</li>
+			<li>
+				<article class="restaurant">
+					<figure>
+						<img src="./images/grelha.jpg">
+					</figure>
+					<div class="maps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.913448661563!2d-0.12544068451658852!3d51.47810297963026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604f6aac39289%3A0x4d5b85d2bab8c91d!2sGrelha+D&#39;Ouro!5e0!3m2!1spt-PT!2suk!4v1489261765185" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</article>
+			</li>
+		</ul>
+	</section>
 
+	<footer>
+		<div class="container clearfix">
 
-				<footer class="clearfix">
-				
-						<span>2017 PORTUGUESE FOOD</span>
-			
-				</footer>
+			<span>2017 PORTUGUESE FOOD</span>
+		</div>
+	</footer>
 
-			</body>
-			</html>
+</body>
+</html>
