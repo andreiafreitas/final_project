@@ -70,6 +70,14 @@ nav a{
 	padding: 0 10px;
 }
 
+nav li{
+	display: inline-block;
+}
+
+nav li.active {
+	background: #f4bf42;
+}
+
 .banner {
 	background: url(../images/azulejos.jpg) center no-repeat;
 	background-size: cover;
@@ -139,6 +147,15 @@ nav a{
 	opacity: 0;
 	font-weight: bold;
 	color: darkred;
+}
+
+.photo-tiles .recipe .button {
+	bottom: 0;
+}
+
+.photo-tiles .recipe .button span{
+	position: relative;
+	bottom: 100px;
 }
 
 .recipe:hover img {
@@ -215,44 +232,41 @@ footer{
 ******  RECIPES PAGE ******
 ****************************/
 
+.wrapper a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: darkred;
+	font-size: 1.5rem;
+}
+
 .photo-tiles{
-	float: left;
 	width: 900px;
 	margin: 0 auto;
 	text-align: center;
 	padding: 5% 2%;
 }
 
-.tile{
-	float: left;
-	padding: 0 0 2% 0;
-	margin: 1%;
-	background-color: #f4bf42;
-	box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
-	border-radius: 20px;
+/****** POLVO PAGE ******/
+
+.bigger-image{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.container-recipe{
+	width: 800px;
+	margin: 0 auto;
 }
 
 
-.wrapper a{
-	text-decoration: none;
-	text-transform: uppercase;
-	color: darkred;
-	font-size: 1.5rem;
-} 
-.photo-block h3{
-	color: white;
-	font-size: 0.9rem;
-	font-weight: bold;
-	padding-top: 10px;
-}
-
-.photo-block a {
+.photo-block-recipe-page h4{
 	font-size: 0.5rem;
-	font-weight: bold;
-	color: white;
-	display: block;
-	padding: 3px 0 0 0;
-	margin: 2px 0 0 0;
-
+	color: darkred;
 }
+
+
+
+
+
 
