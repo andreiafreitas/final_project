@@ -40,6 +40,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+header{
+	background-color: rgb(26, 26, 26);
+	padding: 3%;
+}
+
 .page-header h1{
 	text-transform: uppercase;
 	font-size: 1.5rem;
@@ -48,11 +53,6 @@ body {
 .page-header a{
 	text-decoration: none;
 	color: white;
-}
-
-header{
-	background-color: rgb(26, 26, 26);
-	padding: 3%;
 }
 
 .page-header{
@@ -74,14 +74,14 @@ nav li{
 	display: inline-block;
 }
 
-nav li.active {
+header nav .active{
 	background: #f4bf42;
 }
 
 .banner {
 	background: url(../images/azulejos.jpg) center no-repeat;
 	background-size: cover;
-	padding: 12%;
+	padding: 6%;
 }
 
 .intro-content{
@@ -119,7 +119,7 @@ nav li.active {
 }
 
 .card .button {
-	font-size: .75rem;
+	font-size: 0.75rem;
 }
 
 .card p, .card h3, .card .button {
@@ -173,23 +173,23 @@ nav li.active {
 	padding: 3% 0 6% 0;
 }
 
-.videos h2{
+.videos h2 {
 	font-size: 1.2rem;
 	color: white;
 	padding-bottom: 30px;
 	text-transform: uppercase;
 }
 
-.container-restaurants{
+.container-restaurants {
 	max-width: 1100px;
 	margin: 0 auto;
 }
 
-.container-restaurants img{
+.container-restaurants img {
 	display: block;
 }
 
-.restaurant{
+.restaurant {
 	position: relative;
 	float: left;
 	width: 50%;
@@ -202,20 +202,21 @@ nav li.active {
 	height: 100%;
 	opacity: 0;
 }
-.maps iframe{
+
+.maps iframe {
 	width: 100%;
 	height: 100%;
 }
 
-.restaurant:hover img{
+.restaurant:hover img {
 	opacity: 0.1;
 }
 
-.restaurant:hover .maps, .restaurant:hover p{
+.restaurant:hover .maps, .restaurant:hover p {
 	opacity:1;
 }
 
-footer{
+footer {
 	float: left;
 	background-color: rgb(26, 26, 26);
 	font-weight: 700;
@@ -232,7 +233,7 @@ footer{
 ******  RECIPES PAGE ******
 ****************************/
 
-.wrapper a{
+.wrapper a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -240,30 +241,72 @@ footer{
 	font-size: 1.5rem;
 }
 
-.photo-tiles{
+.photo-tiles {
+	background-color: 
 	width: 900px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 5% 2%;
+	padding: 5% 0 0 0;
 }
 
-/****** POLVO PAGE ******/
-
-.bigger-image{
-	width: 300px;
-	margin: 0 auto;
+.photo-tiles a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: darkred;
 }
 
-.container-recipe{
+/****** ONE RECIPE PAGE ******/
+
+.container-recipe {
 	width: 800px;
 	margin: 0 auto;
 }
 
-
-.photo-block-recipe-page h4{
-	font-size: 0.5rem;
-	color: darkred;
+.recipe-page {
+	padding: 5% 2%;
 }
+
+.recipe-page h3 {
+	font-size: 1rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: rgb(26, 26, 26);
+}
+
+.photo-block-recipe-page img {
+	margin: 0 auto;
+	padding: 2% 0;
+}
+
+.photo-block-recipe-page h4 {
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: darkred;
+	padding: 2% 0 0 0;
+}
+
+.photo-block-recipe-page .recipe-list li:first-letter, .photo-block-recipe-page .recipe-todo li:first-letter {
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+
+.photo-block-recipe-page{
+	line-height: 200%;
+	color: #605e59;
+}
+
+.recipe-list ul .block {
+ 	display: inline-block;
+}
+.recipe-todo li {
+	width: 500px;
+	padding: 0.5% 0 0 0;
+}
+
+
+
 
 
 
