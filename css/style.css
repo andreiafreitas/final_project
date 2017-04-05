@@ -37,7 +37,7 @@ Developer @GA in London
 body {
 	font-size: 12px;
 	line-height: 1.4;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Catamaran', 'Open Sans', sans-serif;
 }
 
 header{
@@ -83,13 +83,14 @@ nav li{
 }
 
 header nav .active{
-	background: #f4bf42;
+	background: darkred;
 }
 
 .banner {
 	background: url(../images/azulejos.jpg) center no-repeat;
 	background-size: cover;
 	padding: 6%;
+	opacity: 0.7;
 }
 
 .intro-content{
@@ -241,6 +242,13 @@ footer {
 ******  RECIPES PAGE ******
 ****************************/
 
+.banner-recepie {
+	background: url(../images/things.png) center no-repeat;
+	background-size: cover;
+	padding: 6%;
+	opacity: 0.7;
+}
+
 .wrapper a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -253,7 +261,7 @@ footer {
 	width: 800px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 5% 0 0 0;
+	padding: 5% 0 4% 0;
 }
 
 .photo-tiles a {
@@ -266,13 +274,26 @@ footer {
 
 /****** ONE RECIPE PAGE ******/
 
+.banner-polvo {
+	background: url(../images/polvo-big.jpg) center no-repeat;
+	background-size: cover;
+	padding: 6%;
+	margin-bottom: 50px;
+	opacity: 0.7;
+}
+
 .container-recipe {
 	width: 800px;
 	margin: 0 auto;
+	text-align: center;	
+
 }
 
 .recipe-page {
-	padding: 5% 2%;
+	border-top: 4px solid rgb(204,0,0);
+	background: rgb(242,242,242) url(./images/procedure-bg.jpg) no-repeat left top;
+	padding: 10px 30px 20px;
+	margin-bottom: 30px;
 }
 
 .recipe-page h3 {
@@ -282,10 +303,6 @@ footer {
 	color: rgb(26, 26, 26);
 }
 
-.photo-block-recipe-page img {
-	margin: 0 auto;
-	padding: 2% 0;
-}
 
 .photo-block-recipe-page h4 {
 	font-size: 0.9rem;
@@ -304,15 +321,117 @@ footer {
 	color: #605e59;
 }
 
-.recipe-list ul .block {
- 	display: inline-block;
-}
 .recipe-todo li {
-	width: 500px;
 	padding: 0.5% 0 0 0;
 }
 
 
+/***** RESPONSIVE *****/
+
+@media only screen and (max-width: 800px) {
+
+	body {
+		font-size: 18px;
+	}
+
+	header {
+		padding: 10px;
+	}
+
+	h3 {
+		font-size: 30px;
+	}
+
+	.page-header {
+		font-size: 36px;
+	}
+
+	header nav {
+		width: 100%;
+		margin: 0;
+	}
+	header nav ul li{
+		float: none;
+		display: block;
+		margin: 0;
+		font-size: 18px;
+	}
+	.hamburger {
+		display:block;
+		position: absolute;
+		top:.6em;
+		right:.75em;
+	}
+	header nav ul li a {
+		display: block;
+		width: 100%;
+		padding: 10px 0;
+		border-bottom: 1px solid #ccc;
+		text-align: center;
+	}
+	header nav ul{
+		display: none;
+	}
+	#hero {
+		height: auto;
+		padding: 30px 0 50px;
+	}
+	#hero h2 {
+		font-size: 28px;
+		margin: 40px 0 60px;
+	}
+	#benefits {
+		padding: 30px 0;
+	}
+	#benefits p, #benefits ul {
+		width: 82%;
+		margin: 0 auto 20px;
+	}
+	blockquote {
+		font-size: 20px;
+		width: 90%;
+	}
+	#main {
+		margin-top: 25px;
+	}
+	footer .logo, footer ul li {
+		margin-bottom: 30px;
+	}
+	.post h2 {
+		font-size: 24px;
+	}
+	.post p {
+		font-size: 18px;
+	}
+	.post p:first-of-type:first-letter {
+		float: none;
+		font-size: 18px;
+		line-height: 18px;
+		padding: 0;
+		font-weight: 300;
+	}
+	.post img {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	#sidebar h3 {
+		font-size: 24px;
+	}
+	#sidebar ul li a, #sidebar p {
+		font-size: 18px;
+	}
+	#sidebar img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#posts, #sidebar {
+		margin: 0 auto;
+		width: 95%;
+		display: block;
+	}
+}
 
 
 
