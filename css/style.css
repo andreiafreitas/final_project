@@ -286,11 +286,11 @@ footer {
 	width: 800px;
 	margin: 0 auto;
 	text-align: center;	
-
 }
 
 .recipe-page {
 	border-top: 4px solid darkred;
+	background: rgb(242,242,242)
 	padding: 10px 30px 20px;
 	margin-bottom: 30px;
 }
