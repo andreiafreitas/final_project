@@ -37,7 +37,7 @@ Developer @GA in London
 body {
 	font-size: 12px;
 	line-height: 1.4;
-	font-family: 'Catamaran', 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 header{
@@ -290,8 +290,7 @@ footer {
 }
 
 .recipe-page {
-	border-top: 4px solid rgb(204,0,0);
-	background: rgb(242,242,242) url(./images/procedure-bg.jpg) no-repeat left top;
+	border-top: 4px solid darkred;
 	padding: 10px 30px 20px;
 	margin-bottom: 30px;
 }
@@ -302,7 +301,6 @@ footer {
 	text-transform: uppercase;
 	color: rgb(26, 26, 26);
 }
-
 
 .photo-block-recipe-page h4 {
 	font-size: 0.9rem;
@@ -328,40 +326,36 @@ footer {
 
 /***** RESPONSIVE *****/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 
 	body {
-		font-size: 18px;
+		font-size: 0.75rem;
+		line-height: 1;
 	}
 
-	header {
-		padding: 10px;
-	}
-
-	h3 {
-		font-size: 30px;
-	}
-
-	.page-header {
-		font-size: 36px;
+	.page-header{
+		float: left;
 	}
 
 	header nav {
 		width: 100%;
 		margin: 0;
 	}
+
 	header nav ul li{
 		float: none;
 		display: block;
 		margin: 0;
 		font-size: 18px;
 	}
+
 	.hamburger {
 		display:block;
 		position: absolute;
 		top:.6em;
 		right:.75em;
 	}
+
 	header nav ul li a {
 		display: block;
 		width: 100%;
@@ -369,69 +363,79 @@ footer {
 		border-bottom: 1px solid #ccc;
 		text-align: center;
 	}
-	header nav ul{
-		display: none;
+
+	.banner {
+		opacity: 0;
 	}
-	#hero {
-		height: auto;
-		padding: 30px 0 50px;
+
+	.cards {
+		overflow: show;
 	}
-	#hero h2 {
-		font-size: 28px;
-		margin: 40px 0 60px;
+
+	.card {
+		float: none;
+		display: block;
 	}
-	#benefits {
-		padding: 30px 0;
+
+	.card img {
+		display: block;
 	}
-	#benefits p, #benefits ul {
-		width: 82%;
-		margin: 0 auto 20px;
+
+	.card p, .card h3, .card .button {
+		display: block;
 	}
-	blockquote {
-		font-size: 20px;
+
+	.photo-tiles .recipe .button span{
 		width: 90%;
 	}
-	#main {
-		margin-top: 25px;
-	}
-	footer .logo, footer ul li {
-		margin-bottom: 30px;
-	}
-	.post h2 {
-		font-size: 24px;
-	}
-	.post p {
-		font-size: 18px;
-	}
-	.post p:first-of-type:first-letter {
-		float: none;
-		font-size: 18px;
-		line-height: 18px;
-		padding: 0;
-		font-weight: 300;
-	}
-	.post img {
-		width: 100%;
-		margin-bottom: 15px;
-	}
-	#sidebar h3 {
-		font-size: 24px;
-	}
-	#sidebar ul li a, #sidebar p {
-		font-size: 18px;
-	}
-	#sidebar img {
+
+	.recipe:hover img {
 		display: none;
+	}
+
+	.recipe:hover h3, .recipe:hover p, .recipe:hover .button {
+		display: none;
+	}
+
+	.videos{
+		width: 50%;
+	}
+
+	.container-restaurants {
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+
+	.restaurant {
+		position: relative;
+		float: left;
+		width: 50%;
+	}
+
+	.maps {
+		width: 50%;
+		height: 100%;
+		opacity: 0;
+	}
+
+	.maps iframe {
+		width: 50%;
+		height: 50%;
+	}
+
+	.restaurant:hover img {
+		display: none;
+	}
+
+	.restaurant:hover .maps, .restaurant:hover p {
+		overflow: hidden;
+	}
+
+	footer {
+		float: none;
 	}
 }
 
-@media only screen and (max-width: 1000px) {
-	#posts, #sidebar {
-		margin: 0 auto;
-		width: 95%;
-		display: block;
-	}
-}
 
 
 
