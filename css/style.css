@@ -329,7 +329,7 @@ footer {
 @media only screen and (max-width: 1000px) {
 
 	body {
-		font-size: 0.75rem;
+		font-size: 10px;
 		line-height: 1;
 	}
 
@@ -407,7 +407,6 @@ footer {
 	}
 
 	.restaurant {
-		position: relative;
 		float: left;
 		width: 50%;
 	}
@@ -423,13 +422,6 @@ footer {
 		height: 50%;
 	}
 
-	.restaurant:hover img {
-		display: none;
-	}
-
-	.restaurant:hover .maps, .restaurant:hover p {
-		overflow: hidden;
-	}
 
 	footer {
 		float: none;
