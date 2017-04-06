@@ -382,21 +382,12 @@ footer {
 		margin-right: 1.95%;
 	}
 
-	.recipe:hover img {
-		
-	}
-
-	.recipe:hover h3, .recipe:hover p, .recipe:hover .button {
-		
-	}
-
 	.recipe h3, .recipe p, .recipe .button{
 		display: block;
 		font-size: 36px;
 		font-weight: 300;
 		font-style: italic;
 		text-align: center;
-		width: ;
 		margin: 0 auto;
 	}
 
